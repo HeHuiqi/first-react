@@ -43,7 +43,13 @@ package.json文件devDependencies配置
     "@babel/preset-stage-0": "^6.24.1",
 ```
 升级后.babelrc配置文件 babel v7.3.0以后的版本
-可以尝试@babel/preset-react不行就换成@babel/react,即使用@babel/preset-前缀
+可以尝试@babel/前缀,不行就使用@babel/preset-前缀
+如：
+@babel/preset-env <-->@babel/env
+@babel/preset-react <-->@babel/react
+@babel/preset-es2015 <-->@babel/es2015
+@babel/preset-stage-0 <-->@babel/stage-0
+
 ```
 {
   "presets": [
