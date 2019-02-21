@@ -162,4 +162,5 @@ node webpack_dev_server.js
 ```
 
 ## 示例Demo
-[first-react](https://)
+[first-react](https://github.com/HeHuiqi/first-react.git
+)
