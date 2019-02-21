@@ -30,9 +30,10 @@ package.json文件devDependencies配置
   ]
 }
 ```
+
 因为bable的升级要统一改成如下配置即可
 ```
-    "babel": "^6.23.0",
+    "@babel": "^7.3.0",
     "@babel/cli": "^6.26.0",
     "@babel/core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -41,14 +42,15 @@ package.json文件devDependencies配置
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-0": "^6.24.1",
 ```
-升级后.babelrc配置文件
+升级后.babelrc配置文件 babel v7.3.0以后的版本
+可以尝试@babel/preset-react不行就换成@babel/react,即使用@babel/preset-前缀
 ```
 {
   "presets": [
     "@babel/preset-env",
-    "@babel/preset-es2015",
-    "@babel/preset-react",
-    "@babel/preset-stage-0"
+    "@babel/es2015",
+    "@babel/react",
+    "@babel/stage-0"
   ]
 }
 ```
@@ -57,3 +59,4 @@ package.json文件devDependencies配置
 npm install
 
 ```
+[bable 官网参考](https://babeljs.io/docs/en/v7-migration)
